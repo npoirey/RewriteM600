@@ -1,11 +1,11 @@
 /*
- * View model for RewriteM600
+ * View model for Snapmaker2RewriteM600
  *
  * Author: Gustavo Cevallos
  * License: MIT
  */
 $(function() {
-    function Rewritem600ViewModel(parameters) {
+    function Snapmaker2RewriteM600ViewModel(parameters) {
         var self = this;
 
         // assign the injected parameters, e.g.:
@@ -14,7 +14,7 @@ $(function() {
 
         // TODO: Implement your plugin's view model here.
         self.onDataUpdaterPluginMessage = function(plugin, data) {
-            if (plugin !== "RewriteM600") {
+            if (plugin !== "Snapmaker2RewriteM600") {
 				return;
 			}
 			if(data.type == "popup") {
@@ -34,10 +34,10 @@ $(function() {
      * and a full list of the available options.
      */
     OCTOPRINT_VIEWMODELS.push({
-        construct: Rewritem600ViewModel,
+        construct: Snapmaker2RewriteM600ViewModel,
         // ViewModels your plugin depends on, e.g. loginStateViewModel, settingsViewModel, ...
         dependencies: [ /* "loginStateViewModel", "settingsViewModel" */ ],
-        // Elements to bind to, e.g. #settings_plugin_RewriteM600, #tab_plugin_RewriteM600, ...
+        // Elements to bind to, e.g. #settings_plugin_Snapmaker2RewriteM600, #tab_plugin_Snapmaker2RewriteM600, ...
         elements: [ /* ... */ ]
     });
 });

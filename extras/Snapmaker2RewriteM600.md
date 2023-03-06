@@ -1,8 +1,8 @@
 ---
 layout: plugin
 
-id: RewriteM600
-title: RewriteM600
+id: Snapmaker2RewriteM600
+title: Snapmaker2RewriteM600
 description: Implement M600 for pinters that can't support M600 by default (TFT with out marlin mode support, like Artilelry X1 and Genius)
 author: Gustavo Cevallos
 license: MIT
@@ -10,9 +10,9 @@ license: MIT
 # TODO
 date: today's date in format YYYY-MM-DD, e.g. 2015-04-21
 
-homepage: https://github.com/wgcv/RewriteM600
-source: https://github.com/wgcv/RewriteM600
-archive: https://github.com/wgcv/RewriteM600/archive/master.zip
+homepage: https://github.com/npoirey/RewriteM600
+source: https://github.com/npoirey/RewriteM600
+archive: https://github.com/npoirey/RewriteM600/archive/master.zip
 
 # TODO
 # Set this to true if your plugin uses the dependency_links setup parameter to include
@@ -82,16 +82,16 @@ compatibility:
   - windows
   - macos
   - freebsd
-  
+
   # Compatible Python version
   #
   # Plugins should aim for compatibility for Python 2 and 3 for now, in which case the value should be ">=2.7,<4".
   #
-  # Plugins that only wish to support Python 3 should set it to ">=3,<4". 
+  # Plugins that only wish to support Python 3 should set it to ">=3,<4".
   #
   # If your plugin only supports Python 2 (worst case, not recommended for newly developed plugins since Python 2
   # is EOL), leave at ">=2.7,<3"
-  
+
   python: ">=2.7,<3"
 
 ---
